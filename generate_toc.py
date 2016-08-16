@@ -12,7 +12,7 @@ def main():
         with open(filename, 'r') as notebook_file:
             sections = '\n'.join(['{0}{3} [{1}](#{2})'.format('    ' * (len(s.split(' ')[0]) - 1),
                                                      ' '.join(s.split(' ')[1:]),
-                                                     '-'.join(s.lower().split(' ')[1:]),
+                                                     '-'.join(s.split(' ')[1:]),
                                                      '*' if args.bullet else '{}.'.format(i + 1)) for i, s in
                         enumerate([item for sublist in
                             [[re.sub('\n', '', line) for line in cell['source'] if line.startswith('#')]
