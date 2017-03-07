@@ -23,7 +23,8 @@ def main():
                     else:
                         toc_string += '{}. '.format(count)
                     toc_string += '[{}](#{})\n'\
-                            .format(' '.join(contents[1:]), '-'.join(contents[1:]))
+                            .format(' '.join(contents[1:]),
+                                    '-'.join([re.sub('[^a-z]', '', x.lower()) for x in contents[1:]]))
 
         print('-' * len(filename))
         print(filename)
