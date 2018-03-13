@@ -5,10 +5,10 @@ I hate having to manually generate a table of contents for a large notebook that
 ## Example
 
 ```bash
-┬─[william@fillory:~/Dropbox/Projects/jupyter_toc]─[03:33:57 PM]
+┬─[zoe@fillory:~/Dropbox/Projects/jupyter_toc]─[03:33:57 PM]
 ╰─>$ ./generate_toc.py ~/Dropbox/classwork/hoeferlab/linefit/01\ Line\ Fitting.ipynb 
 -----------------------------------------------------------------------
-/home/william/Dropbox/classwork/hoeferlab/linefit/01 Line Fitting.ipynb
+/home/zoe/Dropbox/classwork/hoeferlab/linefit/01 Line Fitting.ipynb
 # Table of Contents
 1. [TOC](#toc)
 2. [Data Info](#data-info)
